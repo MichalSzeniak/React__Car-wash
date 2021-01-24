@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import './Navigation.scss';
+import '../styles/Navigation.scss';
 import { GoThreeBars, GoX } from 'react-icons/go';
-import dropletLogo from '../assets/icons/droplet-logo.svg';
+import dropletLogo from '../../assets/icons/droplet-logo.svg';
+
 const Navigation = () => {
   const [click, setClick] = useState(false);
 

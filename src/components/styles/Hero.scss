@@ -1,0 +1,51 @@
+@import './variable';
+
+.hero {
+    width: 100%;
+    background-color: $navyBlue;
+
+    &__box {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 16px 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85vh;
+        position: relative;
+    }
+
+    &__content {
+        padding: 16px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 160px;
+        left: 0;
+    }
+
+    &__header {
+        color: #fff;
+        margin: 0;
+        font-size: 64px;
+        font-weight: normal;
+    }
+
+    &__header--second {
+        color: #fff;
+        margin: 0;
+        font-size: 48px;
+        font-weight: normal;
+        padding-bottom: 70px;
+    }
+
+    &__button {
+        background-color: $blueLight;
+        color: $navyBlue;
+        font-weight:bolder;
+        text-decoration: none;
+        padding: 15px 50px;
+        border-radius: 10px;
+    }
+}
