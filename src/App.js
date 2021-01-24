@@ -3,6 +3,7 @@ import Navigation from './components/layouts/Navigation';
 import Hero from './components/layouts/Hero';
 import Pricing from './components/layouts/Pricing';
 import Informations from './components/layouts/Informations';
+import Footer from './components/layouts/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <Pricing/>
       <Informations/>
+      <Footer/>
     </>
   );
 }
