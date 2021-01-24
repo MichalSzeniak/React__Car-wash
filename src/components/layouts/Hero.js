@@ -1,5 +1,6 @@
 import React from 'react';
 import hero from '../../assets/icons/hero.svg';
+import icon from '../../assets/icons/hero-icon.svg';
 import '../styles/Hero.scss';
 
 const Hero = () => {
@@ -13,12 +14,15 @@ const Hero = () => {
           <div className="hero__content">
             <div>
               <h1 className="hero__header">A Clean Car,</h1>
-              <h2 className="hero__header--second">Wherever You Are</h2>
+              <p className="hero__header--second">Wherever You Are</p>
             </div>
             <a className="hero__button" href="">
               get started
             </a>
           </div>
+        </div>
+        <div className="hero__icon">
+          <img className="hero__icon--img" src={icon} />
         </div>
       </section>
     </>

@@ -21,7 +21,7 @@
 
     &__img {
         position: absolute;
-        top: 160px;
+        bottom: -200px;
         left: 0;
     }
 
@@ -39,6 +39,14 @@
         font-weight: normal;
         padding-bottom: 70px;
     }
+
+
+    &__icon {
+        position: absolute;
+        bottom: -120px;
+        right: 0;
+    }
+
 
     &__button {
         background-color: $blueLight;
