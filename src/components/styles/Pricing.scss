@@ -7,7 +7,6 @@
     &__box {
         max-width: 1440px;
         margin: 0 auto;
-        padding: 0 16px 0 16px;
     }
 
     &__header {
@@ -19,14 +18,16 @@
     }
 
     &__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .package {
     background-color: $blueLight;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +59,7 @@
         background-color: $navyBlue-light;
         padding: 24px 64px;
         border-radius: 16px;
-        margin: 64px 0 42px 0;
+        margin: 64px 18px 42px 18px;
         text-decoration: none;
         font-size: 24px;
     }
@@ -70,14 +71,14 @@
 
 .decorated {
     background-color: $navyBlue-light;
-    transform: scale(1.05);
+    transform: scale(1.02);
 
     &__button {
         color: #fff;
         background-color: $blueLight;
         padding: 24px 64px;
         border-radius: 16px;
-        margin: 64px 0 42px 0;
+        margin: 64px 18px 42px 18px;
         text-decoration: none;
         font-size: 24px;
     }

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Pricing.scss';
-import link from '../../assets/icons/package1.svg';
 
 const Package = ({ id, name, link, className, price, service }) => {
 

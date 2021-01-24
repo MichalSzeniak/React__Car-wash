@@ -2,6 +2,7 @@ import './components/styles/App.scss';
 import Navigation from './components/layouts/Navigation';
 import Hero from './components/layouts/Hero';
 import Pricing from './components/layouts/Pricing';
+import Informations from './components/layouts/Informations';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navigation/>
       <Hero/>
       <Pricing/>
+      <Informations/>
     </>
   );
 }
