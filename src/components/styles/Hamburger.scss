@@ -1,0 +1,65 @@
+@import './variable';
+
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    bottom: 0;
+    margin: 0;
+    border: none;
+    z-index: 2;
+
+    @media (min-width: $tablet){
+        display: none;
+    }
+}
+
+.hamburger__box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+@mixin hamburger__line {
+    width: 100%;
+    height: 3px;
+    background-color: $blue;
+    position: absolute;
+}
+
+.hamburger__inner {
+    @include hamburger__line;
+    left: 0;
+    top: 50%;
+    transition: background-color 0.3s ease-in-out 0.1s;
+}
+
+.hamburger__inner::after,
+.hamburger__inner::before {
+    content: '';
+    @include hamburger__line;
+    left: 0;
+    transition: transform 0.3s ease-in-out 0.1s;
+}
+
+.hamburger__inner::after {
+    top: 10px;
+}
+
+.hamburger__inner::before {
+    top: -10px;
+}
+
+.hamburger__active .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger__active .hamburger__inner::after {
+    transform:translateY(-10px) rotate(-45deg);
+}
+
+.hamburger__active .hamburger__inner::before {
+    transform:translateY(10px) rotate(45deg) ;
+}

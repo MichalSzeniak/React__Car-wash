@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import '../styles/Navigation.scss';
-import { GoThreeBars, GoX } from 'react-icons/go';
+import '../styles/Hamburger.scss';
 import dropletLogo from '../../assets/icons/droplet-logo.svg';
+
 
 const Navigation = () => {
   const [click, setClick] = useState(false);
@@ -13,20 +14,31 @@ const Navigation = () => {
     <>
       <nav className="navigation">
         <div className="logo">
-          <span className='logo__first'>Car</span> wash
-          <img src={dropletLogo} alt=""/>
+          <span className="logo__first">Car</span> wash
+          <img src={dropletLogo} alt="" />
         </div>
-        <button  className="hamburger-button" onClick={handleClick}>click</button>
-        <div className="hamburger-button" >{click ? <GoThreeBars /> : <GoX />}</div>
-        <ul className={click ? 'navMenu mobile' : 'navMenu'}>
-          <li className='navItem'>
-            <a className='navLink active' href="">Home</a>
+        
+        <button class={click ? 'hamburger hamburger__active' : 'hamburger'} onClick={handleClick}>
+          <span className="hamburger__box">
+            <span className="hamburger__inner"></span>
+          </span>
+        </button>
+
+        <ul className={click ? 'navMenu-active navMenu-mobile' : 'navMenu'}>
+          <li className="navItem">
+            <a className="navLink active" href="">
+              Home
+            </a>
           </li>
-          <li className='navItem'>
-            <a className='navLink' href="">Services</a>
+          <li className="navItem">
+            <a className="navLink" href="">
+              Services
+            </a>
           </li>
-          <li className='navItem'>
-            <a className='navLink' href="">Contact</a>
+          <li className="navItem">
+            <a className="navLink" href="">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

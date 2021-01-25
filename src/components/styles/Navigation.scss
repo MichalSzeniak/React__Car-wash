@@ -1,27 +1,58 @@
 @import '_variable';
 
 .navigation {
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 125px;
-    background-color: #16213E;
+    height: 85px;
+    background-color: #16213ef5;
     padding: 0 64px 0 46px;
     box-sizing: border-box;
+}
+
+@mixin mobileMenu {
+    transition: 0.3s ease-in-out 0.1s left ;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:$navyBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
 .navMenu
 {
     display: flex;
     list-style: none;
+
+    @media (max-width: $tablet) {
+        @include mobileMenu;
+        left: -1000px;
+    }
+}
+
+.navMenu-mobile {
+    @include mobileMenu;
+    left: 0;
 }
 
 .navItem {
-    padding: 0 40px;
+    padding: 0 40px 0 0;
+
+    @media (max-width: $tablet){
+        margin-bottom: 50px;
+    }
 }
 
 .navLink {
@@ -36,6 +67,10 @@
 
 .hamburger-button {
     display: none;
+
+    @media (max-width: $tablet) {
+        display:block;
+    }
 }
 
 .logo {

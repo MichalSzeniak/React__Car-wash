@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 85vh;
+        height: 80vh;
         position: relative;
     }
 
@@ -25,6 +25,9 @@
         left: 0;
         @media (min-width: 1600px) {
             transform: scale(1.2);
+        }
+        @media (max-width: $tablet) {
+            display: none;
         }
     }
 
