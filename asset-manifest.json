@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/React__Car-wash/static/css/main.d1ec2004.chunk.css",
-    "main.js": "/React__Car-wash/static/js/main.56a72da6.chunk.js",
-    "main.js.map": "/React__Car-wash/static/js/main.56a72da6.chunk.js.map",
+    "main.css": "/React__Car-wash/static/css/main.edb5da44.chunk.css",
+    "main.js": "/React__Car-wash/static/js/main.20e34813.chunk.js",
+    "main.js.map": "/React__Car-wash/static/js/main.20e34813.chunk.js.map",
     "runtime-main.js": "/React__Car-wash/static/js/runtime-main.b99378cb.js",
     "runtime-main.js.map": "/React__Car-wash/static/js/runtime-main.b99378cb.js.map",
     "static/js/2.2470df71.chunk.js": "/React__Car-wash/static/js/2.2470df71.chunk.js",
     "static/js/2.2470df71.chunk.js.map": "/React__Car-wash/static/js/2.2470df71.chunk.js.map",
     "index.html": "/React__Car-wash/index.html",
-    "static/css/main.d1ec2004.chunk.css.map": "/React__Car-wash/static/css/main.d1ec2004.chunk.css.map",
+    "static/css/main.edb5da44.chunk.css.map": "/React__Car-wash/static/css/main.edb5da44.chunk.css.map",
     "static/js/2.2470df71.chunk.js.LICENSE.txt": "/React__Car-wash/static/js/2.2470df71.chunk.js.LICENSE.txt",
     "static/media/droplet-logo.ef551f12.svg": "/React__Car-wash/static/media/droplet-logo.ef551f12.svg",
     "static/media/facebook.452661b7.svg": "/React__Car-wash/static/media/facebook.452661b7.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.b99378cb.js",
     "static/js/2.2470df71.chunk.js",
-    "static/css/main.d1ec2004.chunk.css",
-    "static/js/main.56a72da6.chunk.js"
+    "static/css/main.edb5da44.chunk.css",
+    "static/js/main.20e34813.chunk.js"
   ]
 }
