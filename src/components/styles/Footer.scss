@@ -9,12 +9,23 @@
         max-width: 1440px;
         margin: 0 auto;
         position: relative;
+
+        @media (max-width: $mobile) {
+            padding: 0;
+        }
     }
 
     &__sections {
         padding-top: 150px;
         display: flex;
         justify-content: center;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            text-align: center;
+        }
     }
 
     &__section {
@@ -25,6 +36,10 @@
 
         &--header {
             font-size: 32px;
+
+            @media (max-width: $mobile) {
+                border-bottom: 1px solid #fff;
+            }
         }
 
         &--Link {
@@ -43,6 +58,11 @@
 
     &__icon {
        padding: 55px; 
+
+       @media (max-width: $mobile) {
+           transform: scale(0.8);
+        padding: 16px 16px 64px 16px;
+    }
     }
 }
 
@@ -52,7 +72,7 @@
     color: #ffffff;
     position: absolute;
     left: 50px;
-    bottom: 50px;
+    bottom: 10px;
 
     &--first {
         font-weight: 700;
