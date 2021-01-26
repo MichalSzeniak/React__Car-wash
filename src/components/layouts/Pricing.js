@@ -45,7 +45,7 @@ const Pricing = () => {
       <section className="pricing">
         <div className="pricing__box">
           <h2 className="pricing__header">Select your wash package</h2>
-          <div className="pricing__grid">
+          <div className="pricing__flex">
             {set}
           </div>
         </div>

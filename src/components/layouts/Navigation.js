@@ -18,7 +18,7 @@ const Navigation = () => {
           <img src={dropletLogo} alt="" />
         </div>
         
-        <button class={click ? 'hamburger hamburger__active' : 'hamburger'} onClick={handleClick}>
+        <button className={click ? 'hamburger hamburger__active' : 'hamburger'} onClick={handleClick}>
           <span className="hamburger__box">
             <span className="hamburger__inner"></span>
           </span>
