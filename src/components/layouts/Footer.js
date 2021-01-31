@@ -46,13 +46,25 @@ const Footer = () => {
             </section>
           </div>
           <div className="footer__icons">
-            <a className="footer__icon" href=""><img src={instagram} alt=""/></a>
-            <a className="footer__icon" href=""><img src={facebook} alt=""/></a>
-            <a className="footer__icon" href=""><img src={linkedin} alt=""/></a>
+            <a className="footer__icon" href="">
+              <img src={instagram} alt="" />
+            </a>
+            <a className="footer__icon" href="">
+              <img src={facebook} alt="" />
+            </a>
+            <a className="footer__icon" href="">
+              <img src={linkedin} alt="" />
+            </a>
           </div>
-          <div className="footer__logo">
-            <span className="footer__logo--first">Car</span> wash
-            <img src={dropletLogo} alt="" />
+          <div className="footer__right">
+            <div className="footer__logo">
+              <span className="footer__logo--first">Car</span> wash
+              <img src={dropletLogo} alt="" />
+            </div>
+            <p>2021 © Michał Szeniak</p>
+            <a href="http://www.freepik.com">
+              Designed by vectorjuice / Freepik
+            </a>
           </div>
         </div>
       </footer>

@@ -8,7 +8,7 @@ import imgPackage3 from '../../assets/icons/package3.svg';
 const packaegs = [
     {
       id: 1,
-      name: 'Starter',
+      name: 'Standard',
       className: 'package',
       link: imgPackage1,
       price: '$9,99',
@@ -16,7 +16,7 @@ const packaegs = [
     },
     {
       id: 2,
-      name: 'kozak',
+      name: 'Deluxe',
       className: 'package decorated',
       link: imgPackage2,
       price: '$14,99',
@@ -24,10 +24,10 @@ const packaegs = [
     },
     {
       id: 3,
-      name: 'turbo koks',
+      name: 'Squeaky clean',
       className: 'package',
       link: imgPackage3,
-      price: '$9,99',
+      price: '$19,99',
       service: ["Interior Windows", "Leather Clean & Condition"],
     },
   ];

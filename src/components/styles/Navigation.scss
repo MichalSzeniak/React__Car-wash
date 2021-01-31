@@ -53,6 +53,11 @@
 
 .navItem {
     padding: 0 40px 0 0;
+    transition: .3s transform ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     @media (max-width: $tablet){
         margin-bottom: 50px;

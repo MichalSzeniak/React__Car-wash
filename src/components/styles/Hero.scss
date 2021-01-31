@@ -52,6 +52,9 @@
         margin: 0;
         font-size: 64px;
         font-weight: normal;
+        animation-name: animation;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
 
         @media (max-width: 549px) {
             font-size: 42px;
@@ -78,19 +81,11 @@
             position: absolute;
             bottom: -60px;
             right: 0;
-            @media (max-width: $tablet) {
-                transform: scale(0.8);
-                position: absolute;
-                bottom: -100px;
-                right: -180px;
-            }
 
-            @media (max-width: $mobile) {
+            @media (max-width: $tablet) {
                 display: none;
             }
         }
-
-
     }
 
 
@@ -103,8 +98,26 @@
         padding: 15px 60px;
         border-radius: 10px;
 
+        transition: .3s background-color ease-in-out;
+
+        &:hover {
+            background-color: rgb(107, 210, 223);
+        }
+
         @media (max-width: $tablet) {
             font-size: 16px;
         }
     }
 }
+
+@keyframes animation {
+    0% {
+      color: #fff;
+    }
+    50% {
+        color: $blueLight;
+    }
+    100% {
+        color: #fff;
+      }
+  }

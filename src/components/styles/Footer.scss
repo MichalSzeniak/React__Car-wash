@@ -10,7 +10,7 @@
         margin: 0 auto;
         position: relative;
 
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             padding: 0;
         }
     }
@@ -31,7 +31,7 @@
     &__section {
         display: flex;
         flex-direction: column;
-        padding: 0 64px;
+        padding: 0 48px;
         color: #fff;
 
         &--header {
@@ -39,14 +39,22 @@
 
             @media (max-width: $mobile) {
                 border-bottom: 1px solid #fff;
+                padding: 32px;
             }
         }
 
         &--Link {
+            display: inline-block;
             color: #fff;
             font-size: 24px;
             text-decoration: none;
             line-height: 42px;
+            transition: .3s transform ease-in-out;
+            transition: .3s transform ease-in-out;
+
+            &:hover {
+             transform: scale(1.05);
+            }
         }
     }
 
@@ -58,6 +66,11 @@
 
     &__icon {
        padding: 55px; 
+       transition: .3s transform ease-in-out;
+
+       &:hover {
+        transform: scale(1.1);
+    }
 
        @media (max-width: $mobile) {
            transform: scale(0.8);
@@ -66,13 +79,29 @@
     }
 }
 
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p {
+        color: #fff;
+    }
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    @media (max-width: $mobile) {
+        flex-direction: column;
+ }
+}
+
 .footer__logo {
     font-size: 36px;
     font-weight: 400;
     color: #ffffff;
-    position: absolute;
-    left: 50px;
-    bottom: 10px;
 
     &--first {
         font-weight: 700;
