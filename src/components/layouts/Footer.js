@@ -47,13 +47,13 @@ const Footer = () => {
           </div>
           <div className="footer__icons">
             <a className="footer__icon" href="">
-              <img src={instagram} alt="" />
+              <img src={instagram} target="_blank" alt="https://www.instagram.com/" />
             </a>
             <a className="footer__icon" href="">
-              <img src={facebook} alt="" />
+              <img src={facebook} target="_blank" alt="https://www.facebook.com/" />
             </a>
             <a className="footer__icon" href="">
-              <img src={linkedin} alt="" />
+              <img src={linkedin} target="_blank" alt="https://linkedin.com/" />
             </a>
           </div>
           <div className="footer__right">
