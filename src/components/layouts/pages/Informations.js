@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Informations.scss';
-import img from '../../assets/icons/informations.svg';
+import '../../styles/Informations.scss';
+import img from '../../../assets/icons/informations.svg';
 
 const Informations = () => {
   return (
