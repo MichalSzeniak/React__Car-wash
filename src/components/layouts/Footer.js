@@ -61,7 +61,7 @@ const Footer = () => {
               <span className="footer__logo--first">Car</span> wash
               <img src={dropletLogo} alt="" />
             </div>
-            <p>2021 © Michał Szeniak</p>
+            <a href="https://github.com/MichalSzeniak">2021 © Michał Szeniak</a>
             <a href="http://www.freepik.com">
               Designed by vectorjuice / Freepik
             </a>

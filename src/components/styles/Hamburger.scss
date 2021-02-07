@@ -13,6 +13,10 @@
     @media (min-width: $tablet){
         display: none;
     }
+
+    @media (max-width: $mobile) {
+        padding: 0;
+    }
 }
 
 .hamburger__box {

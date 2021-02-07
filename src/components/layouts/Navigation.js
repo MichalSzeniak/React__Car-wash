@@ -10,6 +10,7 @@ const Navigation = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const handleLink = () => setClick(false);
 
   return (
     <>
@@ -27,17 +28,17 @@ const Navigation = () => {
 
         <ul className={click ? 'navMenu-active navMenu-mobile' : 'navMenu'}>
           <li className="navItem">
-            <NavLink className="navLink active" exact to="/">
+            <NavLink className="navLink active" onClick={handleLink} exact to="/">
               Home
             </NavLink>
           </li>
           <li className="navItem">
-            <NavLink className="navLink" to="/">
+            <NavLink className="navLink" onClick={handleLink} to="/services">
               Services
             </NavLink>
           </li>
           <li className="navItem">
-            <NavLink className="navLink" to="/contact">
+            <NavLink className="navLink" onClick={handleLink} to="/contact">
               Contact
             </NavLink>
           </li>

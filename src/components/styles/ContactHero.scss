@@ -53,7 +53,7 @@
 .contact {
     position: absolute;
     max-width: 1440px;
-    padding: 24px 64px;
+    // padding: 24px 64px;
     background-color: $blueLight;
     bottom: 0px;
     left: 50%;
@@ -62,19 +62,31 @@
     justify-content:space-around;
     align-items: center;
 
-    &__details {
-        border-right: 5px solid #ffffff;
-        padding: 0 64px;
+    @media(max-width: $tablet) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    &__hours-info {
-        padding: 0 64px;
+    &__details {
+        border-right: 5px solid #fff;
+        padding: 48px 82px;
+        width: 250px;
+
+        @media(max-width: $tablet) {
+            border-right: none;
+            border-bottom: 5px solid #fff;
+            padding: 48px 0;
+        }
     }
 
     &__adress {
         font-size: 18px;
         font-weight: bold;
-        color: #ffffff;
+        color: #fff;
     }
 
     &__info {
@@ -93,6 +105,11 @@
                 left: -35px;
                 top: -2px;
                 color: #fff;
+
+                @media(max-width: $tablet) {
+                    left: 0;
+                    top: 0;
+                }
             }
         }
 
@@ -109,6 +126,11 @@
                 left: -35px;
                 top: -2px;
                 color: #fff;
+
+                @media(max-width: $tablet) {
+                    left: 0;
+                    top: 0;
+                }
             }
         }
     }
@@ -116,6 +138,11 @@
     &__hours-info {
         color: #fff;
         width: 200px;
+        padding: 48px 64px;
+
+        @media(max-width: $tablet) {
+            padding: 48px 0;
+        }
     }
 }
 
@@ -126,8 +153,7 @@
 .contact__logo {
     font-size: 36px;
     font-weight: 400;
-    width: 250px;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     position: relative;
     z-index: 3;
@@ -144,8 +170,8 @@
         width: 189px;
         height: 68px;
         position: absolute;
-        top: -5px;
-        right: 30px;
+        top: -10px;
+        right: -30px;
         z-index: -1;
     }
 }
