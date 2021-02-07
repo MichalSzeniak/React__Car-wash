@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ServicesHero from './ServicesHero';
+import Slides from './Slides';
 
 const Services = () => {
     return (
         <div>
-            siema
+            <ServicesHero />
+            <Slides />
         </div>
     )
 }

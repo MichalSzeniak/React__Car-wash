@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react';
+
 
 const ServicesHero = () => {
+
     return (
-        <div>
-            services
+<div>
+            
+            <section className="hero" id="hero">
+        <div className="hero__box">
+          <div className="hero__content">
+            <div>
+              <h1 className="hero__header">Services</h1>
+            </div>
+          </div>
         </div>
+      </section>
+</div>
     )
 }
 
