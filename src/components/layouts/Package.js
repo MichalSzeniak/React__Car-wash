@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import '../styles/Pricing.scss';
 
 const Package = ({ id, name, link, className, price, service }) => {
@@ -13,7 +14,7 @@ const Package = ({ id, name, link, className, price, service }) => {
       {service.map((key) => (
         <div className="package__description" key={key}>{key}</div>
       ))}
-      <a className={className+"__button"} href="">Select package</a>
+      <NavLink className={className+"__button"} to="/services">Select package</NavLink>
     </div>
   );
 };

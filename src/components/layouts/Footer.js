@@ -1,4 +1,6 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
+import ScrollToTop from './ScrollTotop';
 import dropletLogo from '../../assets/icons/droplet-logo.svg';
 import instagram from '../../assets/icons/instagram.svg';
 import facebook from '../../assets/icons/facebook.svg';
@@ -13,36 +15,37 @@ const Footer = () => {
           <div className="footer__sections">
             <section className="footer__section">
               <h3 className="footer__section--header">Company</h3>
-              <a className="footer__section--Link" href="">
+              <ScrollToTop/>
+              <NavLink className="footer__section--Link" to='/a'>
                 About Us
-              </a>
-              <a className="footer__section--Link" href="">
+              </NavLink>
+              <NavLink className="footer__section--Link" to='/b'>
                 Careers
-              </a>
-              <a className="footer__section--Link" href="">
+              </NavLink>
+              <NavLink className="footer__section--Link" to='/c'>
                 Terms of services
-              </a>
-              <a className="footer__section--Link" href="">
+              </NavLink>
+              <NavLink className="footer__section--Link" to='/d'>
                 Gift Cards
-              </a>
+              </NavLink>
             </section>
             <section className="footer__section">
               <h3 className="footer__section--header">Get Service</h3>
-              <a className="footer__section--Link" href="">
+              <NavLink className="footer__section--Link" to='/cities'>
                 Cities
-              </a>
-              <a className="footer__section--Link" href="">
+              </NavLink>
+              <NavLink className="footer__section--Link" to='/pricing'>
                 Pricing
-              </a>
+              </NavLink>
             </section>
             <section className="footer__section">
               <h3 className="footer__section--header">Contact Us</h3>
-              <a className="footer__section--Link" href="">
+              <NavLink className="footer__section--Link" to='/contact'>
                 Contact
-              </a>
-              <a className="footer__section--Link" href="">
+              </NavLink>
+              <NavLink className="footer__section--Link" href="" to='/contact'>
                 Support
-              </a>
+              </NavLink>
             </section>
           </div>
           <div className="footer__icons">
