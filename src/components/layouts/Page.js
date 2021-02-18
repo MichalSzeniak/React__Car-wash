@@ -9,7 +9,6 @@ const Page = () => {
   return (
     <Switch>
       <Route path="/" exact render={() => <Home />} />
-
       <Route path="/services" render={() => <Services />} />
       <Route path="/contact" render={() => <Contact />} />
       <Route component={ErrorPage} />

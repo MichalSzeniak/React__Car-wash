@@ -15,10 +15,10 @@ const Navigation = () => {
   return (
     <>
       <nav className="navigation">
-        <a className="logo" href="#hero">
+        <NavLink className="logo" to="#">
           <span className="logo__first">Car</span> wash
           <img src={dropletLogo} alt="" />
-        </a>
+        </NavLink>
 
         <button className={click ? 'hamburger hamburger__active' : 'hamburger'} onClick={handleClick}>
           <span className="hamburger__box">

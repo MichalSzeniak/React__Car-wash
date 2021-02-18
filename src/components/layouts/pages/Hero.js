@@ -4,6 +4,11 @@ import icon from '../../../assets/icons/hero-icon.svg';
 import '../../styles/Hero.scss';
 
 const Hero = () => {
+
+  const scroll = () => {
+    window.scrollTo({top: 600, behavior: "smooth"})
+  }
+
   return (
     <>
       <section className="hero" id="hero">
@@ -16,9 +21,9 @@ const Hero = () => {
               <h1 className="hero__header">A Clean Car,</h1>
               <p className="hero__header--second">Wherever You Are</p>
             </div>
-            <a className="hero__button" href="#pricing">
+            <div className="hero__button" onClick={scroll}>
               get started
-            </a>
+            </div>
           </div>
         </div>
         <div className="hero__icon">
