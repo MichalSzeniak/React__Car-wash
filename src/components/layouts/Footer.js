@@ -49,13 +49,13 @@ const Footer = () => {
             </section>
           </div>
           <div className="footer__icons">
-            <a className="footer__icon" target="_blank" href="https://www.instagram.com/">
+            <a className="footer__icon" target="_blank" rel="noreferrer" href="https://www.instagram.com/">
               <img src={instagram}  alt="" />
             </a>
-            <a className="footer__icon" target="_blank" href="https://www.facebook.com/">
+            <a className="footer__icon" target="_blank" rel="noreferrer" href="https://www.facebook.com/">
               <img src={facebook} alt="" />
             </a>
-            <a className="footer__icon" target="_blank" href="https://linkedin.com/">
+            <a className="footer__icon" target="_blank" rel="noreferrer" href="https://linkedin.com/">
               <img src={linkedin} alt="" />
             </a>
           </div>

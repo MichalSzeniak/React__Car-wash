@@ -45,7 +45,7 @@ const ContactHero = () => {
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
-        ></iframe>
+        />
       </section>
     </>
   );

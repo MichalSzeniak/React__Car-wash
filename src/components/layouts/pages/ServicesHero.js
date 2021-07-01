@@ -1,12 +1,9 @@
-import React, {useState} from 'react';
-
+import React from "react";
 
 const ServicesHero = () => {
-
-    return (
-<div>
-            
-            <section className="hero" id="hero">
+  return (
+    <div>
+      <section className="hero" id="hero">
         <div className="hero__box">
           <div className="hero__content">
             <div>
@@ -15,8 +12,8 @@ const ServicesHero = () => {
           </div>
         </div>
       </section>
-</div>
-    )
-}
+    </div>
+  );
+};
 
-export default ServicesHero
+export default ServicesHero;

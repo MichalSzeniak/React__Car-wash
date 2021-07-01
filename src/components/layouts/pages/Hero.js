@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero__icon">
-          <img className="hero__icon--img" src={icon} />
+          <img className="hero__icon--img" alt="" src={icon} />
         </div>
       </section>
     </>
